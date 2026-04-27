@@ -22,10 +22,7 @@ export default function App() {
           /> */}
           <Pixelation granularity={2} />
           <Bloom luminanceThreshold={0} luminanceSmoothing={0.9} height={300} />
-          <Noise
-            premultiply
-            blendFunction={BlendFunction.OVERLAY} // blend mode
-          />
+          <Noise premultiply blendFunction={BlendFunction.OVERLAY} />
           <PerspectiveCamera makeDefault position={[0, 0, 10]} fov={110} />
           <OrbitControls />
           <mesh>
